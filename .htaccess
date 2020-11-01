@@ -1,0 +1,13 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  RewriteRule ^/?(?:en|french|german|th)($|/.*$) $1 [L]
+
+  RewriteCond %{THE_REQUEST} \.cgi
+  RewriteRule .? - [L]
+
+  RewriteCond %{REQUEST_URI} /$ [OR]
+  RewriteCond %{REQUEST_URI} \.(html|htm|shtml|php|php3|phtml)
+  RewriteRule .? wovn_index.php [L]
+
+</IfModule>

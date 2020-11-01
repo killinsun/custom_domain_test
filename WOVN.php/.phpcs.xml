@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<ruleset name="WOVNio">
+  <arg value="s" /> <!-- show sniff codes in all reports -->
+  <arg value="p" /> <!-- show progress of the run -->
+  <arg name="colors" />
+
+  <file>./</file>
+  <exclude-pattern>./vendor</exclude-pattern>
+  <exclude-pattern>./src/wovnio/modified_vendor</exclude-pattern>
+
+  <rule ref="Internal.Tokenizer.Exception">
+    <type>error</type>
+  </rule>
+
+  <!-- https://www.php-fig.org/psr/psr-2/ -->
+  <rule ref="PSR2">
+    <!-- TODO: Fix indentation before fixing lines too long warnings -->
+    <exclude name="Generic.Files.LineLength.TooLong" />
+    <!-- TODO: Fix at last (probably fixed after autoloading setup) -->
+    <exclude name="PSR1.Files.SideEffects.FoundWithSymbols" />
+
+    <exclude name="Generic.ControlStructures.InlineControlStructure.NotAllowed" />
+  </rule>
+
+  <!-- use camelCase everywhere (PSR2 forces it for class members only) -->
+  <rule ref="Squiz.NamingConventions.ValidFunctionName.NotCamelCaps" />
+  <!-- FIXME: Squiz.NamingConventions.ValidVariableName.NotCamelCaps too -->
+  <rule ref="Zend.NamingConventions.ValidVariableName.MemberVarNotCamelCaps" />
+</ruleset>

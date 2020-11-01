@@ -1,0 +1,32 @@
+{
+    "project_token": "FokAAs",
+    "url_pattern_name": "custom_domain",
+    "default_lang": "ja",
+    "supported_langs": [
+        "ja",
+        "en",
+        "fr",
+	"de",
+	"th"
+    ],
+    "encoding": "UTF-8",
+    "custom_domain_langs": {
+	"ja": { 
+		"url": "ec2-3-112-255-81.ap-northeast-1.compute.amazonaws.com/"
+	},
+	"en": { 
+		"url": "ec2-3-112-255-81.ap-northeast-1.compute.amazonaws.com/en/", 
+		"source": "ec2-3-112-255-81.ap-northeast-1.compute.amazonaws.com/en/" 
+	},
+	"fr": { 
+		"url": "ec2-3-112-255-81.ap-northeast-1.compute.amazonaws.com/french/"
+       	},
+	"de": { 
+		"url": "ec2-3-112-255-81.ap-northeast-1.compute.amazonaws.com/german/"
+	},
+	"th": { 
+		"url": "ec2-3-112-255-81.ap-northeast-1.compute.amazonaws.com/th/",
+		"source": "ec2-3-112-255-81.ap-northeast-1.compute.amazonaws.com/th/"
+	}
+    }
+}
