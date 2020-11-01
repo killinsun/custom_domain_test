@@ -1,6 +1,7 @@
 <IfModule mod_rewrite.c>
   RewriteEngine On
 
+  #言語追加する度に必要
   RewriteRule ^/?(?:en|french|german|th)($|/.*$) $1 [L]
 
   RewriteCond %{THE_REQUEST} \.cgi

@@ -2,10 +2,10 @@
 
 <html>
 <head>
-	<title>WOVNPHPカンパニーの概要</title>
+	<title>WOVNPHPカンパニーの概要(タイ語)</title>
 </head>
 <body>
-<h1>概要です。</h1>
+<h1>概要です。タイ語です。</h1>
 
 
 <ul>
